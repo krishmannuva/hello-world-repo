@@ -4,7 +4,15 @@ on: push
 
 jobs:
     hello-job:
-        runs-on: ubuntu-latest
-        steps:
+      strategy:
+        matrix:
+          os: 
+            - ubuntu-latest
+            - windows-latest
+          versions: 
+            - 10
+            - 11  
+      runs-on: ubuntu-latest
+      steps:
         - name: Echo text
           run: echo "Hello, world!"
