@@ -12,7 +12,7 @@ jobs:
           versions:   
             - 12
             - 14
-      runs-on: ubuntu-latest
+      runs-on: ${{ matrix.os }}
       steps:
         - name: Echo text
           run: echo "Hello, world!"
