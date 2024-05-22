@@ -9,9 +9,9 @@ jobs:
           os: 
             - ubuntu-latest
             - windows-latest
-          versions: 
-            - 10
-            - 11  
+          versions:   
+            - 12
+            - 14
       runs-on: ubuntu-latest
       steps:
         - name: Echo text
